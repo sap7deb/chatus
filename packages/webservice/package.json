@@ -15,12 +15,13 @@
     "@types/express": "^4.17.6",
     "@types/jest": "^26.0.0",
     "@types/socket.io": "^2.1.8",
-    "jest": "^24.0.0"
+    "jest": "^24.0.0",
+    "nodemon": "^1.18.5"
   },
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "start": "nodemon index.js",
-    "serve": "node index.js",
+    "start": "nodemon server/index.js",
+    "serve": "node server/index.js",
     "test": "jest"
   }
 }
