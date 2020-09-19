@@ -9,7 +9,7 @@ describe('generateMessage', () => {
 
         expect(typeof message.createdDate).toBe('number');
         expect(message).toMatchObject({from, text});
-    })
+    });
 });
 
 
@@ -24,5 +24,5 @@ describe('generateLocationMessage', () => {
 
         expect(typeof res.createdDate).toBe('number');
         expect(res).toMatchObject({from, url});
-    })
+    });
 });
