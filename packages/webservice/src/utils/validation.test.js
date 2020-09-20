@@ -11,4 +11,8 @@ describe('isRealString', () => {
         var result = isRealString(string);
         expect(result).toBe(false);
     });
+    afterAll((done) => {
+        server.close(done);
+        done();
+      });
 });

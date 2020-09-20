@@ -55,5 +55,9 @@ describe('Users', () => {
         expect(user.id).toBe(userID);
         expect(users.users.length).toBe(2);
     });
+    afterAll((done) => {
+        server.close(done);
+        done();
+      });
 
 });

@@ -8,7 +8,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "moment": "^2.22.2",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.1.1",
+    "typescript": "^4.0.3"
   },
   "devDependencies": {
     "@types/config": "^0.0.36",
@@ -16,10 +17,15 @@
     "@types/socket.io": "^2.1.8",
     "nodemon": "^1.18.5"
   },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "start": "nodemon server/index.js",
-    "serve": "node server/index.js",
-    "test": "jest"
+    "start": "nodemon src/index.js",
+    "test": "jest --no-watch",
+    "serve": "node src/index.js"
   }
 }
