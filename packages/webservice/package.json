@@ -25,6 +25,6 @@
   "scripts": {
     "start": "nodemon src/index.js",
     "test": "jest --no-watch",
-    "build": "node src/index.js"
+    "serve": "node src/index.js"
   }
 }
