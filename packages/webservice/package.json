@@ -23,9 +23,8 @@
     ]
   },
   "scripts": {
-    "build": "rm -rf dist && tsc",
     "start": "nodemon src/index.js",
     "test": "jest --no-watch",
-    "serve": "node src/index.js"
+    "build": "node src/index.js"
   }
 }
